@@ -1,0 +1,16 @@
+// Esquema de Prisma para Bakr Fansa
+// Los modelos principales son gestionados por Payload CMS.
+// Este esquema se usará para consultas personalizadas si se necesitan.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// Los modelos (Albums, Artworks, Products, Orders) se definen
+// como Collections en Payload CMS (ver /collections/).
+// Payload gestiona su propio esquema en la misma base de datos.

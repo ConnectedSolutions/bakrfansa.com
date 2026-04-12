@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap');
+
+:root {
+  --bf-white: #FFFFFF;
+  --bf-linen: #F8F7F4;
+  --bf-ink: #1A1A1A;
+  --bf-stone: #6B6B6B;
+  --bf-gold: #C8A882;
+  --bf-border: #E8E4DC;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bf-white);
+  color: var(--bf-ink);
+  font-family: 'DM Sans', Inter, sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Tipografía serif para títulos */
+h1, h2, h3, .font-serif {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* Scrollbar sutil */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bf-linen);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--bf-border);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--bf-gold);
+}
+
+/* Selección de texto */
+::selection {
+  background-color: var(--bf-gold);
+  color: var(--bf-white);
+}
