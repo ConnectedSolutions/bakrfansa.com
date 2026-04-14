@@ -27,6 +27,11 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'bakrfansa.com',
       },
+      {
+        // Vercel Blob Storage
+        protocol: 'https',
+        hostname: '*.public.blob.vercel-storage.com',
+      },
     ],
   },
 }
