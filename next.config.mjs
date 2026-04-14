@@ -14,9 +14,18 @@ const nextConfig = {
         hostname: 'images.unsplash.com',
       },
       {
-        // Imágenes subidas directamente a Payload (almacenadas en /public/media)
         protocol: 'http',
         hostname: 'localhost',
+      },
+      {
+        // Vercel preview y producción
+        protocol: 'https',
+        hostname: '*.vercel.app',
+      },
+      {
+        // Dominio personalizado (bakrfansa.com)
+        protocol: 'https',
+        hostname: 'bakrfansa.com',
       },
     ],
   },
