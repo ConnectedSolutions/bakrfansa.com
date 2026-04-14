@@ -8,7 +8,6 @@ import CartIcon from '@/components/shop/CartIcon'
 
 const navLinks = [
   { href: '/galeria', label: 'Galería' },
-  { href: '/tienda', label: 'Tienda' },
   { href: '/sobre-mi', label: 'Sobre mí' },
   { href: '/contacto', label: 'Contacto' },
 ]
