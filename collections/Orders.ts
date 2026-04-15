@@ -14,7 +14,9 @@ export const Orders: CollectionConfig = {
   },
   access: {
     read: () => true,
-    create: () => true, // El webhook de Stripe crea pedidos
+    create: () => true, // El webhook de Stripe crea pedidos sin autenticación
+    update: ({ req }) => !!req.user,
+    delete: ({ req }) => !!req.user,
   },
   fields: [
     {
