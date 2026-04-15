@@ -23,6 +23,9 @@ export default buildConfig({
     meta: {
       titleSuffix: '— Bakr Fansa',
     },
+    routes: {
+      logout: '/admin/logout',
+    },
   },
   collections: [
     Media,
